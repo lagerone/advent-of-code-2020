@@ -1,5 +1,4 @@
 {
-  "autoDocstring.docstringFormat": "sphinx",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
@@ -7,21 +6,11 @@
   "python.testing.pytestEnabled": false,
   "python.testing.unittestEnabled": true,
   "python.testing.nosetestsEnabled": false,
-  "python.testing.unittestArgs": [
-    "-v",
-    "-s",
-    "./src",
-    "-p",
-    "test_*.py"
-  ],
-  "[yaml]": {
-    "editor.formatOnSave": false
-  },
+  "python.testing.unittestArgs": ["-v", "-s", "./src", "-p", "test_*.py"],
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false
+      "source.organizeImports": true
     }
   },
-  "python.analysis.extraPaths": ["src"],
   "python.pythonPath": "venv/bin/python"
 }
